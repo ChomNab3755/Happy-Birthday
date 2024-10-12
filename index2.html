@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      .container {
+        text-align: center;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #ff4b5c;
+        font-size: 3em;
+        font-family: khmer os battambang;
+      }
+
+      .birthday-image {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .message p {
+        font-size: 1.5em;
+        color: #333;
+        margin: 20px 0;
+        font-family: khmer os siemreap;
+      }
+
+      button {
+        background-color: #ff4b5c;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff7b7c;
+      }
+    </style>
+    <div class="container">
+      <h1>រីករាយថ្ងៃកំណើតព្រះនាងរបស់បង​&#x2764;!</h1>
+      <img
+        src="src/pov_meas.jpg"
+        alt="Birthday Celebration"
+        class="birthday-image"
+      />
+
+      <div class="message">
+        <p>
+          ជូនពរឲអូនជួបតែសេចក្តីសុខ​ នឹងមនុស្សល្អៗ
+          ប្រាថ្នាអ្វីឲបានសម្រេចដូចសេចក្តីប្រាថ្នាណា 🎂
+        </p>
+        <p>មួយទៀត កុំភ្លេចស្រឡាញបងឲច្រើនៗផង ឭនៅអូនសម្លាញ​ <3 !</p>
+      </div>
+      <button onclick="playMusic()">Play Birthday Song 🎶</button>
+    </div>
+
+    <!-- Birthday Song -->
+    <audio id="birthdaySong">
+      <source src="src/sound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script1.js"></script>
+  </body>
+</html>
